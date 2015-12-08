@@ -18,7 +18,7 @@ python tests/run_tests.py
 echo ""
 echo " --> Ran the tests in tests/run_tests.py"
 
-deactivate
+
 echo ""
-echo " --> Deactivated the Virtualenv."
+#echo " --> Deactivated the Virtualenv."
 echo ""
