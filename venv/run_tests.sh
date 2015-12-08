@@ -1,13 +1,6 @@
 #!/bin/bash
 
-virtualenv venv/
-echo ""
-echo " --> Created the Virtualenv."
 
-source venv/bin/activate
-echo ""
-echo " --> Activated the Virtualenv."
-echo ""
 
 pip install -r venv/requirements.txt
 echo ""
@@ -19,6 +12,3 @@ echo ""
 echo " --> Ran the tests in tests/run_tests.py"
 
 
-echo ""
-#echo " --> Deactivated the Virtualenv."
-echo ""
