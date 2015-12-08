@@ -26,11 +26,11 @@ for m in mods:
 # Roda os testes da pasta test/
 if __name__=='__main__':
     # Pega todos os arquivos da pasta corrente que sejam .py
-    #tests=TestLoader().discover(ROOT_PATH,"*.py")
+    tests=TestLoader().discover(ROOT_PATH,"*.py")
     # Roda os testes
     # verbosity=2 aumenta o nível de detalhe da saida
-    #result=TextTestRunner(verbosity=2).run(tests) 
-    #result = TextTestRunner().run(tests)
+    result=TextTestRunner(verbosity=2).run(tests) 
+    # result = TextTestRunner().run(tests)
     # Exclui o lixo que é criado temporariamente
     #deleteDB()    
     # Se houver algum problema nos testes, fecha o programa
