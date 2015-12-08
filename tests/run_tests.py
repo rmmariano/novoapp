@@ -34,7 +34,5 @@ if __name__=='__main__':
     # Exclui o lixo que é criado temporariamente
     #deleteDB()    
     # Se houver algum problema nos testes, fecha o programa
-    print "aa"
     if not result.wasSuccessful():
-        print "hue"
         sys.exit(1)
