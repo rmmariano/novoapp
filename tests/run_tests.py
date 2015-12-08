@@ -9,7 +9,7 @@
 #
 
 from sys import path as sys_path
-from sys import exit as sys_exit
+import sys
 from unittest import TestLoader, TextTestRunner
 
 #os_path, PROJECT_PATH, ROOT_PATH, entre outros, estão aqui
@@ -34,5 +34,7 @@ if __name__=='__main__':
     # Exclui o lixo que é criado temporariamente
     #deleteDB()    
     # Se houver algum problema nos testes, fecha o programa
+    print "aa"
     if not result.wasSuccessful():
-        sys_exit(1)
+        print "hue"
+        sys.exit(1)
