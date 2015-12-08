@@ -7,8 +7,8 @@ import default
 
 # Testes relacionado ao Controlador Default
 class TestCtlDefault(W2PTestCase):
-	def setUp(self):
-		W2PTestCase.setUp(self,default)
+	# def setUp(self):
+	# 	W2PTestCase.setUp(self,default)
 
 	def test_cfib(self):
 		self.assertEqual(default.cfib()['message'],'5')

@@ -13,7 +13,7 @@ import fib
 
 def cfib():
     value_fib = fib.fib(10)
-    return dict(message=T(str(value_fib)))
+    return dict(message=str(value_fib))
     #return dict(message=value_fib)
 
 def ctext():

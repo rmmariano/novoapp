@@ -8,36 +8,36 @@ from unittest import TestCase
 from mock import Mock
 
 # importa os imports automáticos do web2py
-from global_imports import *
+#from global_imports import *
 
 class W2PTestCase(TestCase):	
-	def setUp(self,*controllers):
-		#initVars()
-		for c in controllers:
-			c.db=None
+	# def setUp(self,*controllers):
+	# 	#initVars()
+	# 	for c in controllers:
+	# 		c.db=None
 
-			c.T=Mock(side_effect=m__T__)
-			c.URL=Mock(side_effect=m__URL__)
-			c.IS_URL=Mock(side_effect=m__IS_URL__)
+	# 		c.T=Mock(side_effect=m__T__)
+	# 		c.URL=Mock(side_effect=m__URL__)
+	# 		c.IS_URL=Mock(side_effect=m__IS_URL__)
 
-			c.crud=crud
+	# 		c.crud=crud
 
-			c.request=Request() # = web2py 2.1.1
-			#c.request=Request({}) # > web2py 2.1.1
-			c.cache=Cache(request)
-			c.response=Response()
-			c.session=Session()
+	# 		c.request=Request() # = web2py 2.1.1
+	# 		#c.request=Request({}) # > web2py 2.1.1
+	# 		c.cache=Cache(request)
+	# 		c.response=Response()
+	# 		c.session=Session()
 
-			# c.request=request
-			# c.cache=cache
-			# c.response=response
-			# c.session=session
+	# 		# c.request=request
+	# 		# c.cache=cache
+	# 		# c.response=response
+	# 		# c.session=session
 
-			c.redirect=redirect
+	# 		c.redirect=redirect
 
-			import_classes(c)
-			import_gluon_validators(c)
-			import_gluon_html(c)
+	# 		import_classes(c)
+	# 		import_gluon_validators(c)
+	# 		import_gluon_html(c)
 
 	def inside(self,a,b):
 		if str(a) in str(b):
